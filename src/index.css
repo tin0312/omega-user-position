@@ -1,10 +1,7 @@
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: #014D43;
-  height: 70vh;
 }
+
 h1 {
   text-align: center;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
@@ -12,12 +9,20 @@ h1 {
   font-family:  "Open Sans", sans-serif;
 }
 .position{
-  color:#ffc827;
+  color: white;
 }
+
 .chips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
   margin: 0 50px;
   padding: 20px 0;
-  text-align: center;
+}
+footer{
+  align-self: flex-end;
 }
 .pokerchip {
   margin: 1em;
@@ -92,7 +97,19 @@ h1 {
   background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #016C00 0, #016C00 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #016C00 110.7104px, #14343b 151px);
 }
 .green:after {
-  /* content: "25"; */
+  content: "#1";
   background: #14343b;
   color: white;
+}
+#welcome{
+  color: white;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+}
+.title{
+  color: gold;
+}
+@media screen and (max-width: 600px) {
+  .title{
+    font-size: 30px;
+  }
 }
